@@ -24,16 +24,23 @@
           />
           <input type="submit" value="Search" class="city-search-button" />
         </form>
-        <h1 class="city-heading">Paris</h1>
-        <div>
-          <p>
-            Saturday 15:32, <br />
-            moderate rain Humidity: 87%, Wind: 7.2km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="city-heading">Paris</h1>
+            <div class="city-weather-details">
+              Saturday 15:32, moderate rain <br />
+              Humidity: <span class="humidity-wind">87%</span>, Wind:
+              <span class="humidity-wind">7.2km/h</span>
+            </div>
+          </div>
+          <div class="current-temp">
+            <div class="temp-emoji">⛅</div>
+            <div class="temp-current">12</div>
+            <div class="temp-celcius">°C</div>
+          </div>
         </div>
-        <div><p>⛅12°C</p></div>
       </main>
-      <footer>
+      <div class="footer-details">
         <p>
           Coded by
           <a href="https://github.com/MegNia2" target="_blank">Megan Gee</a>, on
@@ -47,7 +54,8 @@
             >Netlify</a
           >
         </p>
-      </footer>
+      </div>
+      <footer></footer>
     </div>
   </body>
 </html>
