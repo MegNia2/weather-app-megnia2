@@ -1,2 +1,16 @@
 body {
+  background-color: #f9f7fe;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background-color: white;
+  display: block;
+  margin: 0 auto;
+  margin-top: 70px;
+  max-width: 600px;
+  padding: 25px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
