@@ -1,3 +1,5 @@
+function currentTemperature(city) {}
+
 function showCity(event) {
   event.preventDefault();
   let cityValue = document.querySelector("#city-search-bar");
