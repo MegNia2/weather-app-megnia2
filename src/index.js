@@ -31,7 +31,7 @@ function formattedDate(date) {
   let minutes = date.getMinutes();
 
   if (minutes < 10) {
-    let minutes = `0:${minutes}`;
+    minutes = `0${minutes}`;
   }
 
   return `${day} ${hours}:${minutes}`;
