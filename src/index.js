@@ -7,7 +7,9 @@ function showTemperature(response) {
   let wind = document.querySelector("#current-wind");
   let date = new Date(response.data.time * 1000);
   let currentDate = document.querySelector("#current-date");
+  let icon = document.querySelector("#icon");
 
+  icon.innerHTML = `<img src="${response.data.condition.icon_url}" class="temp-emoji" />`;
   currentDate.innerHTML = formattedDate(date);
   description.innerHTML = response.data.condition.description;
   humidity.innerHTML = `${response.data.temperature.humidity}%`;
