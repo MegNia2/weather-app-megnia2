@@ -5,12 +5,36 @@ function showTemperature(response) {
   let description = document.querySelector("#current-desc");
   let humidity = document.querySelector("#current-humidity");
   let wind = document.querySelector("#current-wind");
+  let date = new Date(response.data.time * 1000);
+  let currentDate = document.querySelector("#current-date");
 
+  currentDate.innerHTML = formattedDate(date);
   description.innerHTML = response.data.condition.description;
   humidity.innerHTML = `${response.data.temperature.humidity}%`;
   wind.innerHTML = `${response.data.wind.speed}km/h`;
   cityHeading.innerHTML = response.data.city;
   temperatureHeading.innerHTML = temperature;
+}
+
+function formattedDate(date) {
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+
+  if (minutes < 10) {
+    let minutes = `0:${minutes}`;
+  }
+
+  return `${day} ${hours}:${minutes}`;
 }
 
 function searchCity(city) {
