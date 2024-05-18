@@ -43,10 +43,10 @@ a {
 }
 
 .night {
-  background: radial-gradient(
-    circle at 85.4% 50.8%,
-    rgb(14, 72, 222) 0%,
-    rgb(3, 22, 65) 74.2%
+  background: linear-gradient(
+    109.6deg,
+    rgb(27, 27, 79) 11.2%,
+    rgb(120, 201, 244) 100.2%
   );
   background-repeat: no-repeat;
   background-size: cover;
