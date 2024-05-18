@@ -68,9 +68,10 @@ a {
 .city-search-bar {
   background-color: rgba(238, 238, 238, 0.4);
   border: none;
-  width: 70%;
+  width: 80%;
   padding: 20px;
   border-radius: 8px;
+  margin-right: 5px;
 }
 
 .city-search-button {
