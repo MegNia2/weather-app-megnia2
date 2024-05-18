@@ -118,4 +118,4 @@ function displayForecast(response) {
   });
 }
 
-searchCity("Paris");
+searchCity("London");
