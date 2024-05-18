@@ -4,7 +4,7 @@ body {
 }
 
 a {
-  color: #885df1;
+  color: #247291;
   text-decoration: none;
 }
 
@@ -61,7 +61,7 @@ a {
 }
 
 .city-search-bar {
-  background-color: #f9f7fe;
+  background-color: rgba(238, 238, 238, 0.4);
   border: none;
   width: 70%;
   padding: 20px;
@@ -70,10 +70,11 @@ a {
 
 .city-search-button {
   padding: 20px;
-  background-color: #885df1;
+  background-color: #247291;
   color: white;
   border: none;
   border-radius: 8px;
+  font-weight: bold;
 }
 
 .weather-app-data {
@@ -84,6 +85,7 @@ a {
 .city-heading {
   font-size: 50px;
   margin-top: 40px;
+  color: #393e46;
 }
 
 .current-temp {
@@ -92,6 +94,7 @@ a {
   margin-right: 40px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  color: #393e46;
 }
 
 .city-weather-details {
@@ -99,7 +102,7 @@ a {
 }
 
 .humidity-wind {
-  color: #f65282;
+  color: #247291;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
