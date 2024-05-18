@@ -8,6 +8,30 @@ a {
   text-decoration: none;
 }
 
+.morning {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(254, 255, 165) 0%,
+    rgb(255, 232, 182) 90%
+  );
+}
+
+.afternoon {
+  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.evening {
+  background: linear-gradient(45deg, #ee9ca7 0%, #ffdde1 100%);
+}
+
+.night {
+  background: radial-gradient(
+    circle at 85.4% 50.8%,
+    rgb(14, 72, 222) 0%,
+    rgb(3, 22, 65) 74.2%
+  );
+}
+
 .container {
   background-color: white;
   display: block;

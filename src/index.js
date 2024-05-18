@@ -35,6 +35,17 @@ function formattedDate(date) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
+  let background = document.querySelector("#background-gradient");
+
+  if (hours < 12) {
+    background.classList.add("morning");
+  } else if (hours < 18) {
+    background.classList.add("afternoon");
+  } else if (hours < 21) {
+    background.classList.add("evening");
+  } else {
+    background.classList.add("night");
+  }
 
   return `${day} ${hours}:${minutes}`;
 }
